@@ -3,12 +3,12 @@ import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 export default function GuestCount() {
   return (
     <FormControl fullWidth>
-      <InputLabel id="demo-simple-select-label">Age</InputLabel>
+      <InputLabel id="demo-simple-select-label">Guest Count</InputLabel>
       <Select
         labelId="demo-simple-select-label"
         id="demo-simple-select"
         // value={age}
-        label="Age"
+        label="Guest Count"
         // onChange={handleChange}
       >
         <MenuItem value={10}>Ten</MenuItem>

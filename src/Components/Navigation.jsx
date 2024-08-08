@@ -7,15 +7,16 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import logoYellowGreen from "../assets/logoYellowGreen.png";
 import "../Style/Navigation.css";
-import { useState } from "react";
-
-const pages = ["Home", "About", "Menu", "Reservation", "Order", "Login"];
+// import { useState } from "react";
 
 export default function Navigation() {
-  const [page, setPage] = useState(null);
+  // const [page, setPage] = useState(null);
 
   return (
-    <AppBar position="static">
+    <AppBar
+      position="static"
+      color="warning"
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -29,7 +30,6 @@ export default function Navigation() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
               textDecoration: "none",
             }}
           >
@@ -48,14 +48,42 @@ export default function Navigation() {
             ></IconButton>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+            <Button
+              sx={{ my: 2, color: "black", display: "block" }}
+              href="/"
+            >
+              Home
+            </Button>
+            <Button
+              sx={{ my: 2, color: "black", display: "block" }}
+              href="/about"
+            >
+              About
+            </Button>
+            <Button
+              sx={{ my: 2, color: "black", display: "block" }}
+              href="/menu"
+            >
+              Menu
+            </Button>
+            <Button
+              sx={{ my: 2, color: "black", display: "block" }}
+              href="/reservation"
+            >
+              Reservation
+            </Button>
+            <Button
+              sx={{ my: 2, color: "black", display: "block" }}
+              href="/order"
+            >
+              Order
+            </Button>
+            <Button
+              sx={{ my: 2, color: "black", display: "block" }}
+              href="/login"
+            >
+              Login
+            </Button>
           </Box>
         </Toolbar>
       </Container>

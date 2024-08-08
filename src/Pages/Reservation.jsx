@@ -3,7 +3,7 @@ import restaurant from "../assets/restaurant.jpg";
 import "../Style/Reservation.css";
 import DateTime from "../Components/DateTime.jsx";
 import GuestCount from "../Components/GuestCount.jsx";
-import Chips from "../Components/Chips.jsx";
+import ChipList from "../Components/ChipList.jsx";
 
 export default function Reservation() {
   return (
@@ -18,29 +18,29 @@ export default function Reservation() {
           className="input"
           required
           id="outlined-required"
-          label="Required"
-          placeholder="Hello World"
+          label="First name"
+          placeholder="John"
         />
         <TextField
           className="input"
           required
           id="outlined-required"
-          label="Required"
-          placeholder="Hello World"
+          label="Last name"
+          placeholder="Doe"
         />
         <TextField
           className="input"
           required
           id="outlined-required"
-          label="Required"
-          placeholder="Hello World"
+          label="Email"
+          placeholder="JohnDoe@gmail.com"
         />
         <TextField
           className="input"
           required
           id="outlined-required"
-          label="Required"
-          placeholder="Hello World"
+          label="Phone number"
+          placeholder="06 00 00 00 00"
         />
         <div className="dateTime">
           <DateTime />
@@ -50,25 +50,24 @@ export default function Reservation() {
         </div>
         <div className="containerChips">
           <div className="chip">
-            <Chips
+            <ChipList
               title="Occasion"
-              label1="None"
-              label2="Engagement"
-              label3="Anniversary"
-              label4="Birthday"
+              value={["None", "Engagement", "Anniversary"]}
             />
           </div>
           <div className="chip">
-            <Chips
-              title="Occasion"
-              label1="None"
-              label2="Engagement"
-              label3="Anniversary"
-              label4="Birthday"
+            <ChipList
+              title="Seating preferences"
+              value={["No preferences", "Indoor", "Outdoor", "Veranda"]}
             />
           </div>
         </div>
-        <Button variant="contained">Submit</Button>
+        <Button
+          variant="contained"
+          color="secondary"
+        >
+          Submit
+        </Button>
       </div>
     </div>
   );

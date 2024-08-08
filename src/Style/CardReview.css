@@ -1,0 +1,37 @@
+.cardReview {
+  width: 256px;
+  background-color: #edefee;
+  height: 384px;
+  border: 1px solid black;
+  border-radius: 16px;
+}
+
+.imgName {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.imgCardReview {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border: solid black 1px;
+  border-radius: 16px;
+  margin-left: 16px;
+}
+
+.nameReview {
+  align-self: center;
+  margin-left: 16px;
+}
+
+.stares {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.reviewBody {
+  margin: 16px;
+}

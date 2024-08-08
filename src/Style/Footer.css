@@ -1,0 +1,8 @@
+.containerLogoTypography {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgLogo {
+  height: 64px;
+}

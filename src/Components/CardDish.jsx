@@ -5,6 +5,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import PropTypes from "prop-types";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import "../Style/CardDish.css";
 
 CardDish.propTypes = {
   imgCard: PropTypes.object,
@@ -15,31 +17,44 @@ CardDish.propTypes = {
 
 export default function CardDish({ imgCard, title, bodyCard, btnCard }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image={imgCard}
-      />
-      <CardContent>
-        <Typography
-          gutterBottom
-          variant="h5"
-          component="div"
-        >
-          {title}
-        </Typography>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-        >
-          {bodyCard}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">{btnCard}</Button>
-      </CardActions>
-    </Card>
+    <div className="cardDish">
+      <Card
+        sx={{ maxWidth: 256, borderRadius: "16px", backgroundColor: "#495E57" }}
+      >
+        <CardMedia
+          component="img"
+          alt="green iguana"
+          height="140"
+          image={imgCard}
+        />
+        <CardContent>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{ color: "#F4CE14" }}
+          >
+            {title}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="white"
+          >
+            {bodyCard}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button
+            size="small"
+            sx={{ color: "#F4CE14" }}
+          >
+            {btnCard}
+            <div className="arrow">
+              <ArrowForwardIcon />
+            </div>
+          </Button>
+        </CardActions>
+      </Card>
+    </div>
   );
 }

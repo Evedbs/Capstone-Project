@@ -1,31 +1,24 @@
+import { CardMedia } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import "../Style/CardReview.css";
+import BasicRating from "./Rating";
 
 export default function CardReview({ rating, photo, name, review }) {
   return (
-    <Card sx={{ minWidth: 275 }}>
-      <CardContent>
-        <Typography
-          sx={{ fontSize: 14 }}
-          color="text.secondary"
-          gutterBottom
-        >
-          {rating}
-        </Typography>
-        <Typography
-          variant="h5"
-          component="div"
-        >
-          zizi
-        </Typography>
-        <Typography
-          sx={{ mb: 1.5 }}
-          color="text.secondary"
-        >
-          {review}
-        </Typography>
-      </CardContent>
-    </Card>
+    <div className="cardReview">
+      <div className="imgName">
+        <img
+          src={photo}
+          className="imgCardReview"
+        />
+        <div className="nameReview">{name}</div>
+      </div>
+      <div className="stares">
+        <BasicRating number={rating} />
+      </div>
+      <p className="reviewBody">{review}</p>
+    </div>
   );
 }

@@ -4,6 +4,12 @@ import restaurantFood from "../assets/restaurantFood.jpg";
 import CardDish from "../Components/CardDish.jsx";
 import CardReview from "../Components/CardReview.jsx";
 import bruschetta from "../assets/bruschetta.jpg";
+import greekSalad from "../assets/greekSalad.jpg";
+import lemonDessert from "../assets/lemonDessert(2).jpg";
+import man from "../assets/manRandom.jpg";
+import man1 from "../assets/manRandom1.jpg";
+import woman from "../assets/womanRandom.jpg";
+import woman1 from "../assets/womanRandom1.jpg";
 
 export default function Home() {
   return (
@@ -17,7 +23,13 @@ export default function Home() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div className="btnCTA">
-            <Button variant="contained">Reserve A Table</Button>
+            <Button
+              variant="contained"
+              href="/reservation"
+              color="secondary"
+            >
+              Reserve A Table
+            </Button>
           </div>
         </div>
         <div className="heroImg">
@@ -36,8 +48,8 @@ export default function Home() {
         </div>
         <div className="containerCard">
           <CardDish
-            imgCard={bruschetta}
-            title="Bruschetta"
+            imgCard={greekSalad}
+            title="Greek Salad"
             bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             btnCard="Order a Delivery"
           />
@@ -48,8 +60,8 @@ export default function Home() {
             btnCard="Order a Delivery"
           />
           <CardDish
-            imgCard={bruschetta}
-            title="Bruschetta"
+            imgCard={lemonDessert}
+            title="Lemon Dessert"
             bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             btnCard="Order a Delivery"
           />
@@ -61,26 +73,34 @@ export default function Home() {
         <div className="containerCardReview">
           <div>
             <CardReview
-              rating="great"
-              review="AWESOME"
+              rating={4}
+              photo={man}
+              name="Greg"
+              review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
             />
           </div>
           <div>
             <CardReview
-              rating="great"
-              review="AWESOME"
+              rating={5}
+              photo={woman}
+              name="Nicole"
+              review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
             />
           </div>
           <div>
             <CardReview
-              rating="great"
-              review="AWESOME"
+              rating={3}
+              photo={man1}
+              name="Nicolas"
+              review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
             />
           </div>
           <div>
             <CardReview
-              rating="great"
-              review="AWESOME"
+              rating={4}
+              photo={woman1}
+              name="Sarah-Nicolette"
+              review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
             />
           </div>
         </div>

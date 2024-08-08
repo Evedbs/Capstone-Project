@@ -7,7 +7,7 @@ export default function DateTime() {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DemoContainer components={["DateTimePicker"]}>
-        <DateTimePicker label="Basic date time picker" />
+        <DateTimePicker label="Date and Time" />
       </DemoContainer>
     </LocalizationProvider>
   );
