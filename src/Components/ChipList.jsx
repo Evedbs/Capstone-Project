@@ -3,6 +3,7 @@ import Stack from "@mui/material/Stack";
 import "../Style/Chips.css";
 import { useState } from "react";
 import PropTypes from "prop-types";
+import { Typography } from "@mui/material";
 
 ChipList.propTypes = {
   title: PropTypes.string,
@@ -14,7 +15,9 @@ export default function ChipList({ title, value }) {
 
   return (
     <>
-      <h1>{title}</h1>
+      <Typography sx={{ fontFamily: "karla", fontSize: 20 }}>
+        {title}
+      </Typography>
       <Stack
         direction="row"
         spacing={4}

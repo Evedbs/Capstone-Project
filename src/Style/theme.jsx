@@ -1,4 +1,6 @@
 import { createTheme } from "@mui/material";
+import "@fontsource/karla";
+import "@fontsource/markazi-text";
 
 const theme = createTheme({
   palette: {
@@ -10,6 +12,21 @@ const theme = createTheme({
     },
     warning: {
       main: "#edefee",
+    },
+    white: {
+      main: "#FFFFFF",
+    },
+  },
+  typography: {
+    fontFamily: "Karla, Arial, sans-serif",
+    h1: {
+      fontFamily: "Markazi Text, Arial, sans-serif",
+    },
+    h2: {
+      fontFamily: "Markazi Text, Arial, sans-serif",
+    },
+    h3: {
+      fontFamily: "Markazi Text, Arial, sans-serif",
     },
   },
 });

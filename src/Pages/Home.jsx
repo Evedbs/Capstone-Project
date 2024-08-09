@@ -1,5 +1,5 @@
 import "../Style/Home.css";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import restaurantFood from "../assets/restaurantFood.jpg";
 import CardDish from "../Components/CardDish.jsx";
 import CardReview from "../Components/CardReview.jsx";
@@ -16,17 +16,42 @@ export default function Home() {
     <div className="app">
       <div className="heroSection">
         <div className="heroContent">
-          <h1 className="h1Hero">Little Lemon</h1>
-          <h3 className="h3Hero">Chicago</h3>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{
+              color: "#f4ce14",
+              fontFamily: "Markazi-text",
+              fontSize: 32,
+            }}
+          >
+            Little Lemon
+          </Typography>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{
+              color: "white",
+              fontFamily: "Markazi-text",
+              fontSize: 32,
+            }}
+          >
+            Chicago
+          </Typography>
           <p className="pHero">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <Typography sx={{ fontFamily: "karla", fontSize: 20 }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </Typography>
           </p>
           <div className="btnCTA">
             <Button
               variant="contained"
               href="/reservation"
               color="secondary"
+              sx={{ fontFamily: "karla", fontSize: 20 }}
             >
               Reserve A Table
             </Button>
@@ -41,35 +66,60 @@ export default function Home() {
       </div>
       <div className="highlightsSection">
         <div className="highlightsTitleBtn">
-          <h1 className="h1Specials">Specials</h1>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{ color: "#495e57", fontFamily: "Markazi-text", fontSize: 32 }}
+          >
+            Specials
+          </Typography>
           <div className="btnOrderOnline">
-            <Button variant="contained">Order Online</Button>
+            <Button
+              variant="contained"
+              sx={{ fontFamily: "karla", fontSize: 20 }}
+            >
+              Order Online
+            </Button>
           </div>
         </div>
         <div className="containerCard">
-          <CardDish
-            imgCard={greekSalad}
-            title="Greek Salad"
-            bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            btnCard="Order a Delivery"
-          />
-          <CardDish
-            imgCard={bruschetta}
-            title="Bruschetta"
-            bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            btnCard="Order a Delivery"
-          />
-          <CardDish
-            imgCard={lemonDessert}
-            title="Lemon Dessert"
-            bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            btnCard="Order a Delivery"
-          />
+          <div className="cardDish">
+            <CardDish
+              imgCard={greekSalad}
+              title="Greek Salad"
+              bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              btnCard="Order a Delivery"
+            />
+          </div>
+          <div className="cardDish">
+            <CardDish
+              imgCard={bruschetta}
+              title="Bruschetta"
+              bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              btnCard="Order a Delivery"
+            />
+          </div>
+          <div className="cardDish">
+            <CardDish
+              imgCard={lemonDessert}
+              title="Lemon Dessert"
+              bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              btnCard="Order a Delivery"
+            />
+          </div>
         </div>
       </div>
       <hr />
       <div className="testimonialsSection">
-        <h1 className="h1Testimonials">Testimonials</h1>
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          sx={{ color: "#495e57", fontFamily: "Markazi-text", fontSize: 32 }}
+        >
+          Testimonials
+        </Typography>
         <div className="containerCardReview">
           <div>
             <CardReview
@@ -108,14 +158,23 @@ export default function Home() {
       <hr />
       <div className="aboutSection">
         <div className="h1h3Body">
-          <h1 className="h1About">Little Lemon</h1>
-          <h3 className="h3About">Chicago</h3>
-          <p className="pBlack">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{ color: "#495e57", fontFamily: "Markazi-text", fontSize: 32 }}
+          >
+            Little Lemon
+          </Typography>
+          <Typography sx={{ fontFamily: "karla", fontSize: 20 }}>
+            Chicago
+          </Typography>
+          <Typography sx={{ fontFamily: "karla", fontSize: 20 }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
-          </p>
+          </Typography>
         </div>
       </div>
     </div>

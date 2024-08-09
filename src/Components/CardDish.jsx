@@ -32,11 +32,12 @@ export default function CardDish({ imgCard, title, bodyCard, btnCard }) {
             gutterBottom
             variant="h5"
             component="div"
-            sx={{ color: "#F4CE14" }}
+            sx={{ color: "#F4CE14", fontFamily: "Markazi-text", fontSize: 32 }}
           >
             {title}
           </Typography>
           <Typography
+            sx={{ fontFamily: "karla", fontSize: 20 }}
             variant="body2"
             color="white"
           >
@@ -46,7 +47,7 @@ export default function CardDish({ imgCard, title, bodyCard, btnCard }) {
         <CardActions>
           <Button
             size="small"
-            sx={{ color: "#F4CE14" }}
+            sx={{ color: "#F4CE14", fontFamily: "Markazi-text", fontSize: 20 }}
           >
             {btnCard}
             <div className="arrow">

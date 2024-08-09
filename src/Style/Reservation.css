@@ -23,25 +23,27 @@
 }
 
 .input {
-  width: 25%;
+  width: 512px;
 }
 
 .dateTime {
-  width: 25%;
+  width: 512px;
 }
 
 .guestCount {
-  width: 25%;
+  width: 512px;
 }
 
-.containerChips {
+/* .containerChips {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  gap: 32px;
+} */
 
 .chip {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* gap: 16px; */
 }

@@ -1,9 +1,14 @@
-import { CardMedia } from "@mui/material";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+import { Typography } from "@mui/material";
 import "../Style/CardReview.css";
 import BasicRating from "./Rating";
+import PropTypes from "prop-types";
+
+CardReview.propTypes = {
+  rating: PropTypes.number,
+  photo: PropTypes.string,
+  name: PropTypes.string,
+  review: PropTypes.string,
+};
 
 export default function CardReview({ rating, photo, name, review }) {
   return (
@@ -13,12 +18,18 @@ export default function CardReview({ rating, photo, name, review }) {
           src={photo}
           className="imgCardReview"
         />
-        <div className="nameReview">{name}</div>
+        <Typography sx={{ fontFamily: "Markazi-text", fontSize: 20 }}>
+          {name}
+        </Typography>
       </div>
       <div className="stares">
         <BasicRating number={rating} />
       </div>
-      <p className="reviewBody">{review}</p>
+      <Typography
+        sx={{ fontFamily: "karla", fontSize: 16, fontStyle: "italic" }}
+      >
+        {review}
+      </Typography>
     </div>
   );
 }
