@@ -70,7 +70,12 @@ export default function Home() {
             gutterBottom
             variant="h5"
             component="div"
-            sx={{ color: "#495e57", fontFamily: "Markazi-text", fontSize: 32 }}
+            sx={{
+              color: "#495e57",
+              fontFamily: "Markazi-text",
+              fontSize: 32,
+              marginLeft: "20%",
+            }}
           >
             Specials
           </Typography>
@@ -116,7 +121,12 @@ export default function Home() {
           gutterBottom
           variant="h5"
           component="div"
-          sx={{ color: "#495e57", fontFamily: "Markazi-text", fontSize: 32 }}
+          sx={{
+            color: "#495e57",
+            fontFamily: "Markazi-text",
+            fontSize: 32,
+            marginLeft: 25,
+          }}
         >
           Testimonials
         </Typography>
