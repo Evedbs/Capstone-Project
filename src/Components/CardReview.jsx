@@ -18,7 +18,14 @@ export default function CardReview({ rating, photo, name, review }) {
           src={photo}
           className="imgCardReview"
         />
-        <Typography sx={{ fontFamily: "Markazi-text", fontSize: 20 }}>
+        <Typography
+          sx={{
+            fontFamily: "Markazi-text",
+            fontSize: 20,
+            alignSelf: "center",
+            marginLeft: "16px",
+          }}
+        >
           {name}
         </Typography>
       </div>
@@ -26,7 +33,12 @@ export default function CardReview({ rating, photo, name, review }) {
         <BasicRating number={rating} />
       </div>
       <Typography
-        sx={{ fontFamily: "karla", fontSize: 16, fontStyle: "italic" }}
+        sx={{
+          fontFamily: "karla",
+          fontSize: 16,
+          fontStyle: "italic",
+          margin: "16px",
+        }}
       >
         {review}
       </Typography>

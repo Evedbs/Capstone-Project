@@ -37,9 +37,13 @@ export default function CardDish({ imgCard, title, bodyCard, btnCard }) {
             {title}
           </Typography>
           <Typography
-            sx={{ fontFamily: "karla", fontSize: 20 }}
+            sx={{
+              fontFamily: "karla",
+              fontSize: 16,
+              color: "#ffffff",
+              margin: "8px",
+            }}
             variant="body2"
-            color="white"
           >
             {bodyCard}
           </Typography>

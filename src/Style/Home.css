@@ -48,7 +48,6 @@
 .highlightsTitleBtn {
   display: flex;
   flex-direction: row;
-  gap: 563px;
   margin-top: 128px;
 }
 

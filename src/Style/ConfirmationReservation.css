@@ -1,3 +1,18 @@
-/* body {
+.confirmationReservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
   background-image: url("../assets/lemondessert.jpg");
-} */
+  gap: 32px;
+}
+
+.containerBtn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  gap: 64px;
+}

@@ -16,6 +16,9 @@ const theme = createTheme({
     white: {
       main: "#FFFFFF",
     },
+    success: {
+      main: "#8CFCD6",
+    },
   },
   typography: {
     fontFamily: "Karla, Arial, sans-serif",
