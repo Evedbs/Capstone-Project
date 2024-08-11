@@ -10,6 +10,8 @@ import man from "../assets/manRandom.jpg";
 import man1 from "../assets/manRandom1.jpg";
 import woman from "../assets/womanRandom.jpg";
 import woman1 from "../assets/womanRandom1.jpg";
+import cook from "../assets/cook.jpg";
+import cook1 from "../assets/cook1.jpg";
 
 export default function Home() {
   return (
@@ -23,7 +25,7 @@ export default function Home() {
             sx={{
               color: "#f4ce14",
               fontFamily: "Markazi-text",
-              fontSize: 32,
+              fontSize: 56,
             }}
           >
             Little Lemon
@@ -33,7 +35,7 @@ export default function Home() {
             variant="h5"
             component="div"
             sx={{
-              color: "white",
+              color: "#ffffff",
               fontFamily: "Markazi-text",
               fontSize: 32,
             }}
@@ -73,8 +75,9 @@ export default function Home() {
             sx={{
               color: "#495e57",
               fontFamily: "Markazi-text",
-              fontSize: 32,
+              fontSize: 56,
               marginLeft: "20%",
+              fontStyle: "italic",
             }}
           >
             Specials
@@ -124,8 +127,9 @@ export default function Home() {
           sx={{
             color: "#495e57",
             fontFamily: "Markazi-text",
-            fontSize: 32,
-            marginLeft: 25,
+            fontSize: 56,
+            marginLeft: "20%",
+            fontStyle: "italic",
           }}
         >
           Testimonials
@@ -167,16 +171,29 @@ export default function Home() {
       </div>
       <hr />
       <div className="aboutSection">
-        <div className="h1h3Body">
+        <div className="aboutContent">
           <Typography
             gutterBottom
             variant="h5"
             component="div"
-            sx={{ color: "#495e57", fontFamily: "Markazi-text", fontSize: 32 }}
+            color="primary"
+            sx={{
+              fontFamily: "Markazi-text",
+              fontSize: 56,
+              fontStyle: "italic",
+            }}
           >
             Little Lemon
           </Typography>
-          <Typography sx={{ fontFamily: "karla", fontSize: 20 }}>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{
+              fontFamily: "Markazi-text",
+              fontSize: 32,
+            }}
+          >
             Chicago
           </Typography>
           <Typography sx={{ fontFamily: "karla", fontSize: 20 }}>
@@ -185,6 +202,16 @@ export default function Home() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </Typography>
+        </div>
+        <div className="containerImgAbout">
+          <img
+            src={cook}
+            className="imgCook"
+          />
+          <img
+            src={cook1}
+            className="imgCook1"
+          />
         </div>
       </div>
     </div>

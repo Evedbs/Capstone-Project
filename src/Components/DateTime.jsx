@@ -12,8 +12,8 @@ export default function DateTime({ value, setValue }) {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DateTimePicker
+        sx={{ width: "512px" }}
         label="Date and Time"
-        // value={value.dateTime}
         onChange={(date) => setValue({ ...value, dateTime: date })}
       />
     </LocalizationProvider>

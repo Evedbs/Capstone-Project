@@ -1,11 +1,15 @@
 .heroSection {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #495e57;
   height: 512px;
 }
 
 .heroContent {
-  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
 }
 
 .h1Hero {
@@ -15,7 +19,7 @@
 
 .h3Hero {
   color: white;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .pHero {
@@ -30,14 +34,12 @@
 }
 
 .heroImg {
-  position: absolute;
+  margin-left: 64px;
+  margin-bottom: -192px;
   object-fit: cover;
   width: 448px;
   height: 448px;
-  right: 185px;
-  top: 128px;
   border-radius: 16px;
-  right: 20%;
 }
 
 .highlightsSection {
@@ -49,12 +51,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 128px;
-}
-
-.h1Specials {
-  color: #495e57;
-  font-size: 48px;
-  margin-left: 25%;
+  gap: 704px;
 }
 
 .containerCard {
@@ -63,17 +60,15 @@
   gap: 64px;
   justify-content: center;
   margin-top: 64px;
-  margin-bottom: 64px;
+  margin-bottom: 96px;
 }
 
 .btnOrderOnline {
   align-self: center;
 }
 
-.h1Testimonials {
-  color: #495e57;
-  font-size: 48px;
-  margin-left: 25%;
+.testimonialsSection {
+  margin-top: 96px;
 }
 
 .containerCardReview {
@@ -81,36 +76,42 @@
   flex-direction: row;
   justify-content: center;
   gap: 64px;
+  margin-top: 64px;
+  margin-bottom: 96px;
 }
 
 .aboutSection {
   display: flex;
   flex-direction: row;
-  margin-left: 25%;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 96px;
 }
 
-.h1h3Body {
+.aboutContent {
   display: flex;
   flex-direction: column;
-}
-
-.h1About {
-  color: #495e57;
-  font-size: 48px;
-}
-
-.h3About {
-  color: black;
-  font-size: 36px;
-}
-
-.pBlack {
-  color: black;
-  font-size: 24px;
+  justify-content: center;
   width: 512px;
 }
 
-.containerCardReview {
+.containerImgAbout {
   display: flex;
-  flex-direction: row;
+  width: 448px;
+  height: 448px;
+  margin-left: 64px;
+}
+
+.imgCook {
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  align-self: flex-end;
+}
+
+.imgCook1 {
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-left: -64px;
 }

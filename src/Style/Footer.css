@@ -1,8 +1,17 @@
 .containerLogoTypography {
   display: flex;
   flex-direction: row;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  gap: 32px;
+}
+
+.map {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
 }
 
 .imgLogo {
-  height: 64px;
+  height: 256px;
 }

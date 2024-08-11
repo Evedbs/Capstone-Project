@@ -6,11 +6,8 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import logoYellowGreen from "../assets/logoYellowGreen.png";
 import "../Style/Navigation.css";
-// import { useState } from "react";
 
 export default function Navigation() {
-  // const [page, setPage] = useState(null);
-
   return (
     <AppBar
       position="static"
@@ -22,54 +19,108 @@ export default function Navigation() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              textDecoration: "none",
             }}
           >
-            <img
-              src={logoYellowGreen}
-              className="logoYellowGreen"
-            />
+            <a href="/">
+              <img
+                src={logoYellowGreen}
+                className="logoYellowGreen"
+              />
+            </a>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "none",
+                md: "flex",
+                justifyContent: "center",
+              },
+            }}
+          >
             <Button
-              sx={{ my: 2, color: "black", display: "block" }}
+              sx={{
+                my: 2,
+                color: "black",
+                display: "block",
+                fontWeight: "bold",
+                fontSize: 16,
+                paddingLeft: "64px",
+                paddingRight: "64px",
+              }}
               href="/"
             >
               Home
             </Button>
             <Button
-              sx={{ my: 2, color: "black", display: "block" }}
+              sx={{
+                my: 2,
+                color: "black",
+                display: "block",
+                fontWeight: "bold",
+                fontSize: 16,
+                paddingLeft: "64px",
+                paddingRight: "64px",
+              }}
               href="/about"
             >
               About
             </Button>
             <Button
-              sx={{ my: 2, color: "black", display: "block" }}
+              sx={{
+                my: 2,
+                color: "black",
+                display: "block",
+                fontWeight: "bold",
+                fontSize: 16,
+                paddingLeft: "64px",
+                paddingRight: "64px",
+              }}
               href="/menu"
             >
               Menu
             </Button>
             <Button
-              sx={{ my: 2, color: "black", display: "block" }}
+              sx={{
+                my: 2,
+                color: "black",
+                display: "block",
+                fontWeight: "bold",
+                fontSize: 16,
+                paddingLeft: "64px",
+                paddingRight: "64px",
+              }}
               href="/reservation"
             >
               Reservation
             </Button>
             <Button
-              sx={{ my: 2, color: "black", display: "block" }}
+              sx={{
+                my: 2,
+                color: "black",
+                display: "block",
+                fontWeight: "bold",
+                fontSize: 16,
+                paddingLeft: "64px",
+                paddingRight: "64px",
+              }}
               href="/order"
             >
               Order
             </Button>
             <Button
-              sx={{ my: 2, color: "black", display: "block" }}
+              sx={{
+                my: 2,
+                color: "black",
+                display: "block",
+                fontWeight: "bold",
+                fontSize: 16,
+                paddingLeft: "64px",
+                paddingRight: "64px",
+              }}
               href="/login"
             >
               Login

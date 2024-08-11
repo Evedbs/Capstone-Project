@@ -17,16 +17,28 @@ export default function Reservation() {
     guestCount: "",
   });
 
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   const handleSubmit = () => {
-    setToggle(false);
-    console.log("ça marche");
+    if (
+      value.firstName === "" ||
+      value.lastName === "" ||
+      value.email === "" ||
+      value.phoneNumber === "" ||
+      value.dateTime === "" ||
+      value.guestCount === ""
+    ) {
+      alert("All fields must be completed");
+    } else {
+      setToggle(true);
+    }
   };
 
   return (
     <>
       {toggle ? (
+        <ConfirmationReservation value={value} />
+      ) : (
         <div className="ReservationPage">
           <img
             src={restaurant}
@@ -39,7 +51,10 @@ export default function Reservation() {
             sx={{
               color: "#495e57",
               fontFamily: "Markazi-text",
-              fontSize: 32,
+              fontSize: 56,
+              marginLeft: "20%",
+              fontStyle: "italic",
+              marginTop: "96px",
             }}
           >
             Book Now
@@ -125,7 +140,7 @@ export default function Reservation() {
                   fontFamily: "karla",
                   fontSize: 20,
                   marginTop: "32px",
-                  marginBottom: "64px",
+                  marginBottom: "96px",
                 }}
                 onClick={handleSubmit}
               >
@@ -134,8 +149,6 @@ export default function Reservation() {
             </div>
           </form>
         </div>
-      ) : (
-        <ConfirmationReservation value={value} />
       )}
     </>
   );
