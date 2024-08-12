@@ -2,7 +2,30 @@ body {
   margin: 0px;
 }
 
+.containerNavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .logoYellowGreen {
   object-fit: cover;
   height: 40px;
+}
+
+.navBarMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 1350px) {
+  #btnNavBar {
+    display: none;
+  }
+
+  .navBarMenu {
+    display: flex;
+    color: #495e57;
+    justify-content: end;
+    align-items: end;
+  }
 }

@@ -26,6 +26,7 @@ export default function Home() {
               color: "#f4ce14",
               fontFamily: "Markazi-text",
               fontSize: 56,
+              fontStyle: "italic",
             }}
           >
             Little Lemon
@@ -54,17 +55,16 @@ export default function Home() {
               href="/reservation"
               color="secondary"
               sx={{ fontFamily: "karla", fontSize: 20 }}
+              size="large"
             >
               Reserve A Table
             </Button>
           </div>
         </div>
-        <div className="heroImg">
-          <img
-            src={restaurantFood}
-            className="heroImg"
-          />
-        </div>
+        <img
+          src={restaurantFood}
+          className="heroImg"
+        />
       </div>
       <div className="highlightsSection">
         <div className="highlightsTitleBtn">
@@ -86,6 +86,7 @@ export default function Home() {
             <Button
               variant="contained"
               sx={{ fontFamily: "karla", fontSize: 20 }}
+              size="large"
             >
               Order Online
             </Button>

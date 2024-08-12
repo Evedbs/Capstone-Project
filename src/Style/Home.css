@@ -10,6 +10,7 @@
 .heroContent {
   display: flex;
   flex-direction: column;
+  margin-top: 56px;
 }
 
 .h1Hero {
@@ -51,7 +52,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 128px;
-  gap: 704px;
+  gap: 40%;
 }
 
 .containerCard {
@@ -114,4 +115,25 @@
   object-fit: cover;
   border-radius: 16px;
   margin-left: -64px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .heroImg {
+    display: none;
+  }
+  .containerImgAbout {
+    display: none;
+  }
+
+  .aboutContent {
+    margin: 32px;
+  }
+  .containerCard {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .containerCardReview {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

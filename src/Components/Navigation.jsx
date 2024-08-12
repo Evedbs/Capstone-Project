@@ -5,6 +5,8 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import logoYellowGreen from "../assets/logoYellowGreen.png";
+import MenuIcon from "@mui/icons-material/Menu";
+
 import "../Style/Navigation.css";
 
 export default function Navigation() {
@@ -24,12 +26,14 @@ export default function Navigation() {
               display: { xs: "none", md: "flex" },
             }}
           >
-            <a href="/">
-              <img
-                src={logoYellowGreen}
-                className="logoYellowGreen"
-              />
-            </a>
+            <div className="containerLogo">
+              <a href="/">
+                <img
+                  src={logoYellowGreen}
+                  className="logoYellowGreen"
+                />
+              </a>
+            </div>
           </Typography>
           <Box
             sx={{
@@ -52,6 +56,7 @@ export default function Navigation() {
                 paddingRight: "64px",
               }}
               href="/"
+              id="btnNavBar"
             >
               Home
             </Button>
@@ -66,6 +71,7 @@ export default function Navigation() {
                 paddingRight: "64px",
               }}
               href="/about"
+              id="btnNavBar"
             >
               About
             </Button>
@@ -80,6 +86,7 @@ export default function Navigation() {
                 paddingRight: "64px",
               }}
               href="/menu"
+              id="btnNavBar"
             >
               Menu
             </Button>
@@ -94,6 +101,7 @@ export default function Navigation() {
                 paddingRight: "64px",
               }}
               href="/reservation"
+              id="btnNavBar"
             >
               Reservation
             </Button>
@@ -108,6 +116,7 @@ export default function Navigation() {
                 paddingRight: "64px",
               }}
               href="/order"
+              id="btnNavBar"
             >
               Order
             </Button>
@@ -122,9 +131,13 @@ export default function Navigation() {
                 paddingRight: "64px",
               }}
               href="/login"
+              id="btnNavBar"
             >
               Login
             </Button>
+            <div className="navBarMenu">
+              <MenuIcon />
+            </div>
           </Box>
         </Toolbar>
       </Container>

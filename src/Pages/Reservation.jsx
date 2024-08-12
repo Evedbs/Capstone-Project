@@ -143,6 +143,7 @@ export default function Reservation() {
                   marginBottom: "96px",
                 }}
                 onClick={handleSubmit}
+                size="large"
               >
                 Submit
               </Button>

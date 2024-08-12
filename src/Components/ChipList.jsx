@@ -1,6 +1,6 @@
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
-import "../Style/Chips.css";
+import "../Style/ChipList.css";
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { Typography } from "@mui/material";
@@ -22,14 +22,16 @@ export default function ChipList({ title, value }) {
         direction="row"
         spacing={4}
       >
-        {value.map((label) => (
-          <Chip
-            key={label}
-            label={label}
-            onClick={() => setActive(label)}
-            variant={active === label ? undefined : "outlined"}
-          />
-        ))}
+        <div className="containerChipList">
+          {value.map((label) => (
+            <Chip
+              key={label}
+              label={label}
+              onClick={() => setActive(label)}
+              variant={active === label ? undefined : "outlined"}
+            />
+          ))}
+        </div>
       </Stack>
     </>
   );

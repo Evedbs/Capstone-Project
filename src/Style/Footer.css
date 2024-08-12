@@ -13,5 +13,26 @@
 }
 
 .imgLogo {
-  height: 256px;
+  height: 128px;
+}
+
+.containerTypoA {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerAFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 850px) {
+  .containerFooter {
+    display: none;
+  }
 }

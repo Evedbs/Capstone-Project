@@ -33,6 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .chip {
@@ -40,4 +41,23 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+
+@media only screen and (max-width: 850px) {
+  .input {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+  }
+  .dateTime {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+  }
+
+  .guestCount {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+  }
 }
