@@ -39,7 +39,7 @@ export default function Reservation() {
       {toggle ? (
         <ConfirmationReservation value={value} />
       ) : (
-        <div className="ReservationPage">
+        <section className="ReservationPage">
           <img
             src={restaurant}
             className="imgReservation"
@@ -149,7 +149,7 @@ export default function Reservation() {
               </Button>
             </div>
           </form>
-        </div>
+        </section>
       )}
     </>
   );

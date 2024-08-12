@@ -16,7 +16,7 @@ import cook1 from "../assets/cook1.jpg";
 export default function Home() {
   return (
     <div className="app">
-      <div className="heroSection">
+      <section className="heroSection">
         <div className="heroContent">
           <Typography
             gutterBottom
@@ -65,8 +65,8 @@ export default function Home() {
           src={restaurantFood}
           className="heroImg"
         />
-      </div>
-      <div className="highlightsSection">
+      </section>
+      <section className="highlightsSection">
         <div className="highlightsTitleBtn">
           <Typography
             gutterBottom
@@ -93,34 +93,34 @@ export default function Home() {
           </div>
         </div>
         <div className="containerCard">
-          <div className="cardDish">
+          <article className="cardDish">
             <CardDish
               imgCard={greekSalad}
               title="Greek Salad"
               bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               btnCard="Order a Delivery"
             />
-          </div>
-          <div className="cardDish">
+          </article>
+          <article className="cardDish">
             <CardDish
               imgCard={bruschetta}
               title="Bruschetta"
               bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               btnCard="Order a Delivery"
             />
-          </div>
-          <div className="cardDish">
+          </article>
+          <article className="cardDish">
             <CardDish
               imgCard={lemonDessert}
               title="Lemon Dessert"
               bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               btnCard="Order a Delivery"
             />
-          </div>
+          </article>
         </div>
-      </div>
+      </section>
       <hr />
-      <div className="testimonialsSection">
+      <section className="testimonialsSection">
         <Typography
           gutterBottom
           variant="h5"
@@ -136,42 +136,42 @@ export default function Home() {
           Testimonials
         </Typography>
         <div className="containerCardReview">
-          <div>
+          <article>
             <CardReview
               rating={4}
               photo={man}
               name="Greg"
               review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
             />
-          </div>
-          <div>
+          </article>
+          <article>
             <CardReview
               rating={5}
               photo={woman}
               name="Nicole"
               review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
             />
-          </div>
-          <div>
+          </article>
+          <article>
             <CardReview
               rating={3}
               photo={man1}
               name="Nicolas"
               review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
             />
-          </div>
-          <div>
+          </article>
+          <article>
             <CardReview
               rating={4}
               photo={woman1}
               name="Sarah-Nicolette"
               review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
             />
-          </div>
+          </article>
         </div>
-      </div>
+      </section>
       <hr />
-      <div className="aboutSection">
+      <section className="aboutSection">
         <div className="aboutContent">
           <Typography
             gutterBottom
@@ -208,13 +208,15 @@ export default function Home() {
           <img
             src={cook}
             className="imgCook"
+            alt="image of a cook"
           />
           <img
             src={cook1}
             className="imgCook1"
+            alt="image of a cook"
           />
         </div>
-      </div>
+      </section>
     </div>
   );
 }
