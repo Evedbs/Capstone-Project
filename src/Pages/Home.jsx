@@ -13,21 +13,36 @@ import woman1 from "../assets/womanRandom1.jpg";
 import cook from "../assets/cook.jpg";
 import cook1 from "../assets/cook1.jpg";
 
+const titleSecondary = {
+  color: "#f4ce14",
+  fontFamily: "Markazi-text",
+  fontSize: 56,
+  fontStyle: "italic",
+};
+
+const titlePrimary = {
+  color: "#495e57",
+  fontFamily: "Markazi-text",
+  fontSize: 56,
+  marginLeft: "20%",
+  fontStyle: "italic",
+};
+
+const typographyBlack = {
+  fontFamily: "karla",
+  fontSize: 20,
+};
+
 export default function Home() {
   return (
-    <div className="app">
+    <div className="home">
       <section className="heroSection">
         <div className="heroContent">
           <Typography
             gutterBottom
             variant="h5"
             component="div"
-            sx={{
-              color: "#f4ce14",
-              fontFamily: "Markazi-text",
-              fontSize: 56,
-              fontStyle: "italic",
-            }}
+            sx={titleSecondary}
           >
             Little Lemon
           </Typography>
@@ -35,26 +50,22 @@ export default function Home() {
             gutterBottom
             variant="h5"
             component="div"
-            sx={{
-              color: "#ffffff",
-              fontFamily: "Markazi-text",
-              fontSize: 32,
-            }}
+            color="white"
           >
             Chicago
           </Typography>
           <p className="pHero">
-            <Typography sx={{ fontFamily: "karla", fontSize: 20 }}>
+            <Typography sx={typographyBlack}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Typography>
           </p>
-          <div className="btnCTA">
+          <div className="buttonCTA">
             <Button
               variant="contained"
               href="/reservation"
               color="secondary"
-              sx={{ fontFamily: "karla", fontSize: 20 }}
+              sx={typographyBlack}
               size="large"
             >
               Reserve A Table
@@ -67,25 +78,19 @@ export default function Home() {
         />
       </section>
       <section className="highlightsSection">
-        <div className="highlightsTitleBtn">
+        <div className="highlightsTitleButton">
           <Typography
             gutterBottom
             variant="h5"
             component="div"
-            sx={{
-              color: "#495e57",
-              fontFamily: "Markazi-text",
-              fontSize: 56,
-              marginLeft: "20%",
-              fontStyle: "italic",
-            }}
+            sx={titlePrimary}
           >
             Specials
           </Typography>
-          <div className="btnOrderOnline">
+          <div className="buttonOrderOnline">
             <Button
               variant="contained"
-              sx={{ fontFamily: "karla", fontSize: 20 }}
+              sx={typographyBlack}
               size="large"
             >
               Order Online
@@ -125,13 +130,7 @@ export default function Home() {
           gutterBottom
           variant="h5"
           component="div"
-          sx={{
-            color: "#495e57",
-            fontFamily: "Markazi-text",
-            fontSize: 56,
-            marginLeft: "20%",
-            fontStyle: "italic",
-          }}
+          sx={titlePrimary}
         >
           Testimonials
         </Typography>
@@ -194,10 +193,11 @@ export default function Home() {
               fontFamily: "Markazi-text",
               fontSize: 32,
             }}
+            color="black"
           >
             Chicago
           </Typography>
-          <Typography sx={{ fontFamily: "karla", fontSize: 20 }}>
+          <Typography sx={typographyBlack}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

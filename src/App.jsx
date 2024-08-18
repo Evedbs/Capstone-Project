@@ -5,6 +5,7 @@ import Reservation from "./Pages/Reservation";
 import Footer from "./Components/Footer";
 import Menu from "./Pages/Menu";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Contact from "./Pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,9 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navigation />
-        <Home />
+        <div className="app">
+          <Home />
+        </div>
         <Footer />
       </>
     ),
@@ -58,11 +61,11 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/login",
+    path: "/contact",
     element: (
       <>
         <Navigation />
-        <div>Login</div>
+        <Contact />
         <Footer />
       </>
     ),

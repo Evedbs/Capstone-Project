@@ -31,6 +31,10 @@ const theme = createTheme({
     h3: {
       fontFamily: "Markazi Text, Arial, sans-serif",
     },
+    h5: {
+      fontFamily: "Karla, Arial, sans-serif",
+      color: "white",
+    },
   },
 });
 

@@ -29,7 +29,7 @@
   font-size: 24px;
 }
 
-.btnCTA {
+.buttonCTA {
   margin-top: 64px;
   margin-bottom: 80px;
 }
@@ -48,7 +48,7 @@
   flex-direction: column;
 }
 
-.highlightsTitleBtn {
+.highlightsTitleButton {
   display: flex;
   flex-direction: row;
   margin-top: 128px;
@@ -64,7 +64,7 @@
   margin-bottom: 96px;
 }
 
-.btnOrderOnline {
+.buttonOrderOnline {
   align-self: center;
 }
 
@@ -86,7 +86,7 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 96px;
-  margin-bottom: 96px;
+  padding-bottom: 96px;
 }
 
 .aboutContent {
@@ -117,17 +117,19 @@
   margin-left: -64px;
 }
 
+hr {
+  width: 50%;
+}
+
 @media only screen and (max-width: 1350px) {
   .heroImg {
     display: none;
   }
-  .containerImgAbout {
-    display: none;
+
+  .highlightsTitleButton {
+    gap: 30%;
   }
 
-  .aboutContent {
-    margin: 32px;
-  }
   .containerCard {
     display: flex;
     flex-wrap: wrap;
@@ -135,5 +137,67 @@
   .containerCardReview {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .aboutSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutContent {
+    margin: 32px;
+  }
+  .containerImgAbout {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .highlightsTitleButton {
+    gap: 20%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .aboutContent {
+    height: ;
+  }
+
+  .buttonCTA {
+    align-self: center;
+  }
+
+  .highlightsTitleButton {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -20%;
+  }
+
+  .buttonOrderOnline {
+    margin-left: 20%;
+  }
+
+  .testimonialsSection {
+    margin-left: 8%;
+  }
+
+  .containerCardReview {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -8%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .containerImgAbout {
+    display: none;
+  }
+
+  .heroContent {
+    width: 80vw;
+  }
+
+  .aboutContent {
+    width: 80vw;
   }
 }

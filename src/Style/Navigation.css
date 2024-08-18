@@ -2,30 +2,47 @@ body {
   margin: 0px;
 }
 
-.containerNavBar {
+.navBar {
   display: flex;
   flex-direction: row;
+  background-color: #edefee;
   align-items: center;
+  height: 64px;
+  justify-content: center;
 }
 
 .logoYellowGreen {
   object-fit: cover;
   height: 40px;
+  padding-left: 64px;
+  position: absolute;
+  left: 0;
+  top: 12px;
 }
 
-.navBarMenu {
+.containerButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.navBarMenuResponsive {
   display: none;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1380px) {
   #btnNavBar {
     display: none;
   }
 
-  .navBarMenu {
+  .navBar {
     display: flex;
-    color: #495e57;
+    flex-direction: row;
     justify-content: end;
-    align-items: end;
+  }
+
+  .navBarMenuResponsive {
+    display: flex;
+    padding-right: 64px;
+    color: #495e57;
   }
 }

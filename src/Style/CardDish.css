@@ -1,3 +1,4 @@
 .arrow {
+  display: flex;
   margin-left: 16px;
 }

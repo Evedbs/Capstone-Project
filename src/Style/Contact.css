@@ -1,0 +1,38 @@
+body {
+  overflow-x: hidden;
+}
+
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactOverlappingContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+iframe {
+  align-self: center;
+  width: 800px;
+  height: 512px;
+  margin-top: 128px;
+  margin-bottom: 128px;
+}
+
+.containerTitleForm {
+  display: flex;
+  gap: 512px;
+}
+
+.formContact {
+  width: 400px;
+  height: 512px;
+  /* margin-left: 45%;
+  margin-top: -480px;
+  margin-bottom: 128px;
+  border-radius: 8px; */
+  background-color: #f1f1f1;
+}

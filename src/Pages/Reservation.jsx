@@ -6,8 +6,18 @@ import GuestCount from "../Components/GuestCount.jsx";
 import ChipList from "../Components/ChipList.jsx";
 import { useState } from "react";
 import ConfirmationReservation from "./ConfirmationReservation.jsx";
+import PropTypes from "prop-types";
+import useWindowSize from "../helpers/useWindowSize.jsx";
+
+BookingForm.propTypes = {
+  value: PropTypes.array,
+  setValue: PropTypes.string,
+  handleSubmit: PropTypes.string,
+};
 
 function BookingForm({ value, setValue, handleSubmit }) {
+  const { windowSize } = useWindowSize();
+
   return (
     <section className="ReservationPage">
       <img
@@ -29,6 +39,7 @@ function BookingForm({ value, setValue, handleSubmit }) {
       >
         Book Now
       </Typography>
+      <div>{windowSize}</div>
       <form>
         <div className="containerInputs">
           <TextField
@@ -131,6 +142,10 @@ export default function Reservation() {
 
   const [toggle, setToggle] = useState(false);
   const handleSubmit = () => {
+    const array = [1, 45, 5, 34, 23, 5, 82, 12, 35, 21, 8, 9];
+    for (let i = 0; i < array.length; i++) {
+      console.log(array[i] % 6);
+    }
     if (
       value.firstName === "" ||
       value.lastName === "" ||
