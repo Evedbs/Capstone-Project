@@ -3,7 +3,7 @@ import logoYellowGreen from "../assets/logoYellowGreen.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import { ButtonNavigation } from "./Buttons";
 import ResponsiveNavigation from "./ResponsiveNavigation";
-import { useLocation } from "react-router-dom";
+import logoGreenWhite from "../assets/logoGreenWhite.png";
 
 import "../Style/Navigation.css";
 import { useState } from "react";
@@ -34,34 +34,47 @@ export default function Navigation() {
           ></Typography>
           <div className="containerButtons">
             <a href="/">
-              <img
-                src={logoYellowGreen}
-                className="logoYellowGreen"
-              />
+              {pathName === "/contact" ? (
+                <img
+                  src={logoGreenWhite}
+                  className="logoYellowGreen"
+                />
+              ) : (
+                <img
+                  src={logoYellowGreen}
+                  className="logoYellowGreen"
+                />
+              )}
             </a>
             <ButtonNavigation
               label={"HOME"}
               href="/"
+              pathName={pathName}
             />
             <ButtonNavigation
               label={"ABOUT"}
               href="/about"
+              pathName={pathName}
             />
             <ButtonNavigation
               label={"MENU"}
               href="/menu"
+              pathName={pathName}
             />
             <ButtonNavigation
               label={"RESERVATION"}
               href="/reservation"
+              pathName={pathName}
             />
             <ButtonNavigation
               label={"ORDER"}
               href="/order"
+              pathName={pathName}
             />
             <ButtonNavigation
               label={"CONTACT"}
               href="/contact"
+              pathName={pathName}
             />
           </div>
           <div className="navBarMenuResponsive">

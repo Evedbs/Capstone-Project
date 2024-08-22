@@ -1,4 +1,8 @@
 import "../Style/Contact.css";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import QueryBuilderIcon from "@mui/icons-material/QueryBuilder";
 
 export default function Contact() {
   return (
@@ -12,16 +16,31 @@ export default function Contact() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
         <div className="containerContactLinks">
-          <a className="linkContact">TheLittleLemon@gmail.com</a>
-          <a className="linkContact">Tel: +353 0 000 0000</a>
-          <a className="linkContact">
-            Little Lemon, 19/20 Royal Hibernian Way, Duke Lane Upper, Dublin 2
-            Dublin 2, Dublin, D02 K772, Irlande
-          </a>
-          <a className="linkContact">Tuesday and Wednesday : 12:00 - 22:00</a>
-          <a className="linkContact">
-            Thursday, Friday, Saturday and Sunday : 12:00 - 23:30
-          </a>
+          <div className="containerIconLink">
+            <PhoneIcon />
+            <a className="linkContact">TheLittleLemon@gmail.com</a>
+          </div>
+          <hr className="hrContact" />
+          <div className="containerIconLink">
+            <EmailIcon />
+            <a className="linkContact">Tel: +353 0 000 0000</a>
+          </div>
+          <hr className="hrContact" />
+          <div className="containerIconLink">
+            <LocationOnIcon />
+            <a className="linkContact">
+              Little Lemon, 19/20 Royal Hibernian Way, Duke Lane Upper, Dublin 2
+              Dublin 2, Dublin, D02 K772, Irlande
+            </a>
+          </div>
+          <hr className="hrContact" />
+          <div className="containerIconLink">
+            <QueryBuilderIcon />
+            <a className="linkContact">Tuesday and Wednesday : 12:00 - 22:00</a>
+            <a className="linkContact">
+              Thursday, Friday, Saturday and Sunday : 12:00 - 23:30
+            </a>
+          </div>
         </div>
       </div>
     </div>

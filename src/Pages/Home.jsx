@@ -118,7 +118,7 @@ export default function Home() {
           </article>
         </div>
       </section>
-      <hr />
+      <hr className="hrHome" />
       <section className="testimonialsSection">
         <Typography
           gutterBottom
@@ -163,7 +163,7 @@ export default function Home() {
           </article>
         </div>
       </section>
-      <hr />
+      <hr className="hrHome" />
       <section className="aboutSection">
         <div className="aboutContent">
           <Typography

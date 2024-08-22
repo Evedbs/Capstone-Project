@@ -32,14 +32,28 @@ export function ButtonSecondary({ label, href, onClick }) {
   );
 }
 
-export function ButtonNavigation({ label, href }) {
+export function ButtonNavigation({ label, href, pathName }) {
   return (
     <a
       href={href}
       className="aButtonNavigation"
     >
-      <div className="borderNavigation">
-        <span className="labelNavigation">{label}</span>
+      <div
+        className={
+          pathName === "/contact"
+            ? "borderNavigationchanging"
+            : "borderNavigation"
+        }
+      >
+        <span
+          className={
+            pathName === "/contact"
+              ? "labelNavigationChanging"
+              : "labelNavigation"
+          }
+        >
+          {label}
+        </span>
       </div>
     </a>
   );
