@@ -65,7 +65,9 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navigation />
-        <Contact />
+        <div className="app">
+          <Contact />
+        </div>
         <Footer />
       </>
     ),

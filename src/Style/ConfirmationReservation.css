@@ -5,8 +5,13 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: url("../assets/lemondessert.jpg");
+  background-image: url("../assets/lemonDessert1.jpg");
   gap: 32px;
+}
+
+li {
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
 }
 
 .containerBtn {

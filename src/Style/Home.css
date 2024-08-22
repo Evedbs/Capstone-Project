@@ -29,9 +29,10 @@
   font-size: 24px;
 }
 
-.buttonCTA {
+.buttonCTABook {
   margin-top: 64px;
   margin-bottom: 80px;
+  z-index: 1;
 }
 
 .heroImg {
@@ -64,8 +65,9 @@
   margin-bottom: 96px;
 }
 
-.buttonOrderOnline {
+.buttonCTAOrderOnline {
   align-self: center;
+  z-index: 1;
 }
 
 .testimonialsSection {
@@ -159,10 +161,6 @@ hr {
 }
 
 @media only screen and (max-width: 650px) {
-  .aboutContent {
-    height: ;
-  }
-
   .buttonCTA {
     align-self: center;
   }

@@ -1,4 +1,4 @@
-import { Button, TextField, Typography } from "@mui/material";
+import { TextField, Typography } from "@mui/material";
 import restaurant from "../assets/restaurant.jpg";
 import "../Style/Reservation.css";
 import DateTime from "../Components/DateTime.jsx";
@@ -8,6 +8,7 @@ import { useState } from "react";
 import ConfirmationReservation from "./ConfirmationReservation.jsx";
 import PropTypes from "prop-types";
 import useWindowSize from "../helpers/useWindowSize.jsx";
+import { ButtonSecondary } from "../Components/Buttons.jsx";
 
 BookingForm.propTypes = {
   value: PropTypes.array,
@@ -98,6 +99,7 @@ function BookingForm({ value, setValue, handleSubmit }) {
               <ChipList
                 title="Occasion"
                 value={["None", "Engagement", "Anniversary"]}
+                initialValue={"None"}
               />
             </div>
             <div
@@ -107,23 +109,16 @@ function BookingForm({ value, setValue, handleSubmit }) {
               <ChipList
                 title="Seating preferences"
                 value={["No preferences", "Indoor", "Outdoor", "Veranda"]}
+                initialValue={"No preferences"}
               />
             </div>
           </div>
-          <Button
-            variant="contained"
-            color="secondary"
-            sx={{
-              fontFamily: "karla",
-              fontSize: 20,
-              marginTop: "32px",
-              marginBottom: "96px",
-            }}
-            onClick={handleSubmit}
-            size="large"
-          >
-            Submit
-          </Button>
+          <div className="buttonSubmit">
+            <ButtonSecondary
+              label={"SUBMIT"}
+              onClick={handleSubmit}
+            />
+          </div>
         </div>
       </form>
     </section>
@@ -142,10 +137,6 @@ export default function Reservation() {
 
   const [toggle, setToggle] = useState(false);
   const handleSubmit = () => {
-    const array = [1, 45, 5, 34, 23, 5, 82, 12, 35, 21, 8, 9];
-    for (let i = 0; i < array.length; i++) {
-      console.log(array[i] % 6);
-    }
     if (
       value.firstName === "" ||
       value.lastName === "" ||

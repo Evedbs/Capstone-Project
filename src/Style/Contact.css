@@ -5,34 +5,54 @@ body {
 .contactPage {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+
+.titleContact {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  color: #495e57;
+  font-style: italic;
+  margin-top: 96px;
+  left: 20%;
+  position: absolute;
 }
 
 .contactOverlappingContent {
+  margin-top: 64px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  height: 800px;
+  width: 800px;
+  align-items: center;
 }
 
 iframe {
-  align-self: center;
   width: 800px;
   height: 512px;
-  margin-top: 128px;
-  margin-bottom: 128px;
 }
 
-.containerTitleForm {
-  display: flex;
-  gap: 512px;
-}
-
-.formContact {
+.containerContactLinks {
+  height: 400px;
   width: 400px;
-  height: 512px;
-  /* margin-left: 45%;
-  margin-top: -480px;
-  margin-bottom: 128px;
-  border-radius: 8px; */
-  background-color: #f1f1f1;
+  position: absolute;
+  margin-left: 512px;
+  margin-top: 256px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 16px;
+}
+
+.linkContact {
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  margin-left: 64px;
+  margin-right: 64px;
+  text-align: center;
 }

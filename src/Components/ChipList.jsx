@@ -8,10 +8,11 @@ import { Typography } from "@mui/material";
 ChipList.propTypes = {
   title: PropTypes.string,
   value: PropTypes.string,
+  initialValue: PropTypes.string,
 };
 
-export default function ChipList({ title, value }) {
-  const [active, setActive] = useState();
+export default function ChipList({ title, value, initialValue = null }) {
+  const [active, setActive] = useState(initialValue);
 
   return (
     <>

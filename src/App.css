@@ -14,6 +14,7 @@
 .app {
   position: relative;
 }
-.home {
+.home,
+.contactPage {
   background-color: #edefee;
 }

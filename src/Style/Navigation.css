@@ -11,6 +11,15 @@ body {
   justify-content: center;
 }
 
+.navBarPrimary {
+  display: flex;
+  flex-direction: row;
+  background-color: #495e57;
+  align-items: center;
+  height: 64px;
+  justify-content: center;
+}
+
 .logoYellowGreen {
   object-fit: cover;
   height: 40px;
@@ -29,20 +38,26 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 1380px) {
-  #btnNavBar {
+@media only screen and (max-width: 1540px) {
+  .containerButtons {
     display: none;
   }
-
-  .navBar {
+  .navBarMenuResponsive {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
+    padding-right: 64px;
+    align-items: center;
+    color: #495e57;
   }
 
-  .navBarMenuResponsive {
-    display: flex;
-    padding-right: 64px;
-    color: #495e57;
+  .menuIcon {
+    cursor: pointer;
+  }
+
+  .logoYellowGreen {
+    position: relative;
+    margin-bottom: 24px;
   }
 }

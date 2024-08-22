@@ -1,7 +1,9 @@
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import "../Style/ConfirmationReservation.css";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import PropTypes from "prop-types";
+import ButtonPrimary from "../Components/Buttons";
+import { ButtonSecondary } from "../Components/Buttons";
 
 ConfirmationReservation.propTypes = {
   value: PropTypes.object,
@@ -17,7 +19,8 @@ export default function ConfirmationReservation({ value }) {
         sx={{
           color: "#f4ce14",
           fontFamily: "Markazi-text",
-          fontSize: 32,
+          fontSize: 48,
+          fontWeight: 100,
         }}
       >
         Your Reservation Is Confirmed
@@ -45,30 +48,22 @@ export default function ConfirmationReservation({ value }) {
         }}
       >
         <ul>
-          <li>{`Name: ${value.firstName} ${value.lastName}`}</li>
-          <li>{`Email: ${value.email}`}</li>
-          <li>{`Phone number: ${value.phoneNumber}`}</li>
-          <li>{`Date: ${value.dateTime}`}</li>
-          <li>{`Guest count: ${value.guestCount}`}</li>
+          <li>{`Name : ${value.firstName} ${value.lastName}`}</li>
+          <li>{`Email : ${value.email}`}</li>
+          <li>{`Phone number : ${value.phoneNumber}`}</li>
+          <li>{`Date : ${value.dateTime}`}</li>
+          <li>{`Guest count : ${value.guestCount}`}</li>
         </ul>
       </Typography>
       <div className="containerBtn">
-        <Button
-          variant="contained"
-          href="/menu"
-          color="primary"
-          sx={{ fontFamily: "karla", fontSize: 20 }}
-        >
-          Browse Menu
-        </Button>
-        <Button
-          variant="contained"
-          href="/"
-          color="secondary"
-          sx={{ fontFamily: "karla", fontSize: 20 }}
-        >
-          Home
-        </Button>
+        <ButtonPrimary
+          href={"/menu"}
+          label={"BROWSE MENU"}
+        />
+        <ButtonSecondary
+          label={"HOME"}
+          href={"/"}
+        />
       </div>
     </div>
   );

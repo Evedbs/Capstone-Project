@@ -1,5 +1,5 @@
 import "../Style/Home.css";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import restaurantFood from "../assets/restaurantFood.jpg";
 import CardDish from "../Components/CardDish.jsx";
 import CardReview from "../Components/CardReview.jsx";
@@ -12,6 +12,8 @@ import woman from "../assets/womanRandom.jpg";
 import woman1 from "../assets/womanRandom1.jpg";
 import cook from "../assets/cook.jpg";
 import cook1 from "../assets/cook1.jpg";
+import ButtonPrimary from "../Components/Buttons.jsx";
+import { ButtonSecondary } from "../Components/Buttons.jsx";
 
 const titleSecondary = {
   color: "#f4ce14",
@@ -60,16 +62,11 @@ export default function Home() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Typography>
           </p>
-          <div className="buttonCTA">
-            <Button
-              variant="contained"
-              href="/reservation"
-              color="secondary"
-              sx={typographyBlack}
-              size="large"
-            >
-              Reserve A Table
-            </Button>
+          <div className="buttonCTABook">
+            <ButtonSecondary
+              label={"RESERVE A TABLE"}
+              href={"/reservation"}
+            />
           </div>
         </div>
         <img
@@ -87,14 +84,11 @@ export default function Home() {
           >
             Specials
           </Typography>
-          <div className="buttonOrderOnline">
-            <Button
-              variant="contained"
-              sx={typographyBlack}
-              size="large"
-            >
-              Order Online
-            </Button>
+          <div className="buttonCTAOrderOnline">
+            <ButtonPrimary
+              label={"ORDER ONLINE"}
+              href={"/order"}
+            />
           </div>
         </div>
         <div className="containerCard">
