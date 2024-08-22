@@ -25,6 +25,7 @@ body {
   height: 800px;
   width: 800px;
   align-items: center;
+  margin-bottom: 96px;
 }
 
 iframe {
