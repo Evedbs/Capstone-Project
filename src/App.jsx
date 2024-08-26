@@ -55,7 +55,6 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navigation />
-        <div>Order</div>
         <Footer />
       </>
     ),
