@@ -1,4 +1,6 @@
 .ResponsiveNavigationRoot {
+  z-index: 2;
+  position: fixed;
   display: flex;
   flex-direction: row;
   width: 100vw;
