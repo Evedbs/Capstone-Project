@@ -58,8 +58,8 @@ export default function Home() {
           </Typography>
           <p className="pHero">
             <Typography sx={typographyBlack}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We are a family owned Mediterranean restaurant, focused on
+              traditional recipes served with a modern twist.
             </Typography>
           </p>
           <div className="buttonCTABook">
@@ -96,7 +96,7 @@ export default function Home() {
             <CardDish
               imgCard={greekSalad}
               title="Greek Salad"
-              bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              bodyCard="Traditional Mediterranean dish that features a mix of fresh vegetables and simple, yet flavorful ingredients."
               btnCard="Order a Delivery"
             />
           </article>
@@ -104,7 +104,7 @@ export default function Home() {
             <CardDish
               imgCard={bruschetta}
               title="Bruschetta"
-              bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              bodyCard="Typically served as an appetizer, bruschetta is an Italian dish consisting of grilled or toasted bread with fresh ingredients."
               btnCard="Order a Delivery"
             />
           </article>
@@ -112,7 +112,7 @@ export default function Home() {
             <CardDish
               imgCard={lemonDessert}
               title="Lemon Dessert"
-              bodyCard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              bodyCard="A classic creamy dessert, a flaky pastry crust filled with a smooth, tangy lemon curd. It's topped with a dusting of powdered sugar."
               btnCard="Order a Delivery"
             />
           </article>
@@ -134,7 +134,7 @@ export default function Home() {
               rating={4}
               photo={man}
               name="Greg"
-              review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
+              review={`"The Greek salad is delicious! I will recommend this restaurant to my friends!"`}
             />
           </article>
           <article>
@@ -142,7 +142,7 @@ export default function Home() {
               rating={5}
               photo={woman}
               name="Nicole"
-              review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
+              review={`"Very well located restaurant with a great atmosphere, I will return with great pleasure!"`}
             />
           </article>
           <article>
@@ -150,7 +150,7 @@ export default function Home() {
               rating={3}
               photo={man1}
               name="Nicolas"
-              review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
+              review={`“Friendly restaurant and the service is irreproachable, small flat on the lemon pie that I find slightly too sweet.”`}
             />
           </article>
           <article>
@@ -158,7 +158,7 @@ export default function Home() {
               rating={4}
               photo={woman1}
               name="Sarah-Nicolette"
-              review="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”"
+              review={`“Amazing! My loved ones loved it! the setting is great, the waiters are very friendly and the dishes are delicious! You must try the Greek salad.”`}
             />
           </article>
         </div>

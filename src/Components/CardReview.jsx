@@ -32,16 +32,18 @@ export default function CardReview({ rating, photo, name, review }) {
       <div className="stares">
         <BasicRating number={rating} />
       </div>
-      <Typography
-        sx={{
-          fontFamily: "karla",
-          fontSize: 16,
-          fontStyle: "italic",
-          margin: "16px",
-        }}
-      >
-        {review}
-      </Typography>
+      <div className="cardReviewBody">
+        <Typography
+          sx={{
+            fontFamily: "karla",
+            fontSize: 16,
+            fontStyle: "italic",
+            margin: "16px",
+          }}
+        >
+          {review}
+        </Typography>
+      </div>
     </div>
   );
 }

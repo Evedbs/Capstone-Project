@@ -12,32 +12,40 @@ FooterSection.propTypes = {
   value: PropTypes.array,
 };
 
+const typographyWhite = {
+  fontFamily: "karla",
+  fontSize: 20,
+  color: "white",
+};
+
 const sections = [
   {
     title: "Navigation",
     value: [
       { label: "Home", link: "/" },
-      { label: "About", link: "/about" },
       { label: "Menu", link: "/menu" },
       { label: "Reservation", link: "/reservation" },
-      { label: "Order Online", link: "/order" },
-      { label: "Login", link: "/login" },
-    ],
-  },
-  {
-    title: "Contact",
-    value: [
-      { label: "Address", link: "/about" },
-      { label: "Phone number", link: "/about" },
-      { label: "Email", link: "/about" },
     ],
   },
   {
     title: "Social Media Links",
     value: [
-      { label: "Facebook", link: "/about" },
-      { label: "Linkedin", link: "/about" },
-      { label: "Instagram", link: "/about" },
+      { label: "Facebook", link: "https://www.facebook.com/" },
+      { label: "Instagram", link: "https://www.instagram.com/" },
+    ],
+  },
+  {
+    title: "Contact",
+    value: [
+      {
+        label: "Little Lemon, 19/20 Royal Hibernian Way, Irlande",
+        link: "https://www.google.fr/maps/place/Little+Lemon/@53.341481,-6.2618191,17z/data=!3m1!4b1!4m6!3m5!1s0x48670f886b1dd297:0xf1b04af0735a4553!8m2!3d53.3414778!4d-6.2592442!16s%2Fg%2F11kjh5cxpm!5m1!1e3?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D",
+      },
+      { label: "+353 0 000 0000", link: "/about" },
+      {
+        label: "TheLittleLemon@gmail.com",
+        link: "https://www.google.com/intl/fr/gmail/about/",
+      },
     ],
   },
 ];
@@ -47,18 +55,22 @@ function FooterSection({ title, value }) {
     <div className="containerTypoA">
       <Typography
         key={title}
-        sx={{
-          my: 2,
-          color: "#F4CE14",
-          display: "block",
-          fontSize: 24,
-        }}
+        sx={
+          (typographyWhite,
+          {
+            my: 2,
+            color: "#F4CE14",
+            display: "block",
+            fontSize: 24,
+          })
+        }
       >
         {title}
       </Typography>
       <div className="containerAFooter">
         {value.map((item) => (
           <a
+            target="_blank"
             key={item.label}
             className="a"
             href={item.link}

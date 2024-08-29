@@ -32,6 +32,11 @@
   margin-top: 8px;
 }
 
-.reviewBody {
-  margin: 16px;
+.cardReviewBody {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
