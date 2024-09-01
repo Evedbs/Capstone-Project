@@ -25,7 +25,6 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navigation />
-        <div>About</div>
         <Footer />
       </>
     ),
@@ -35,7 +34,9 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navigation />
-        <Menu />
+        <div className="app">
+          <Menu />
+        </div>
         <Footer />
       </>
     ),

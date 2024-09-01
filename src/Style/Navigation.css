@@ -3,6 +3,7 @@ body {
 }
 
 .navBar {
+  top: 0px;
   display: flex;
   flex-direction: row;
   background-color: #edefee;

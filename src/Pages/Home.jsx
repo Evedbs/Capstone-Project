@@ -192,10 +192,12 @@ export default function Home() {
             Chicago
           </Typography>
           <Typography sx={typographyBlack}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            {`Little Lemon opened in 1995 by two Italian brothers, Adrian and
+            Mario. Despite the city's diversity, the two brothers recognized the
+            lack of Mediterranean cuisine in Dublin, and were inspired to bring
+            the flavors of their hometown in Italy to the people of Dublin. The
+            two brothers continue to oversee the Little Lemon restaurant, nearly
+            thirty years later.`}
           </Typography>
         </div>
         <div className="containerImgAbout">
